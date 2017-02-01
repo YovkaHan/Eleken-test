@@ -25,9 +25,11 @@
 		ul {
 			margin-left: 1px;
 		}
-						
+		
+		@include animate-after();			
 		a {
-			margin: 20px 27px;
+			margin: 19px 27px 20px;
+		    line-height: 22px;
 			padding: 0;
 			@include font-lato-bold-up(12px);
 			

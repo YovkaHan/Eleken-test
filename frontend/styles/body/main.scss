@@ -29,6 +29,26 @@ $m_color_light: rgb(237,237,237);
 	font-weight: normal;
 }
 
+@mixin animate-after() {
+	a {			
+					&:after {
+						content:"";
+						display: block;
+						vertical-align: bottom;
+						width: 0%;
+						border-top: 2px solid blue;
+						transition: width 0.5s ease-in-out;
+					}
+					&:hover:after {
+						content:"";
+						display: block;
+						vertical-align: bottom;
+						border-top: 2px solid blue;
+						width: 100%;
+					}
+				}
+}
+
 .navbar-custom {
 				
 			.nav-custom-main {
@@ -97,28 +117,14 @@ $m_color_light: rgb(237,237,237);
 			.nav-custom-main {
 				margin-left: $margin-lft;
 						
-				a {
+				a{
 					margin: 17px 27px 0 27px;
 					line-height: 25px;
 					opacity: $opacity;
 					@include font-lato-bold-up(12px);
-					
-					&:after {
-						content:"";
-						display: block;
-						vertical-align: bottom;
-						width: 0%;
-						border-top: 2px solid blue;
-						transition: width 0.5s ease-in-out;
-					}
-					&:hover:after {
-						content:"";
-						display: block;
-						vertical-align: bottom;
-						border-top: 2px solid blue;
-						width: 100%;
-					}
 				}
+				@include animate-after();
+				
 				a.sale {
 					padding-right: 18px;
 					color: red;

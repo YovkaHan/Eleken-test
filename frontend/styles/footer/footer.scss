@@ -3,6 +3,9 @@
 footer{
 	padding-top: 3px;
 	@include main-menu(170px, 1);
+	.nav-custom-main {
+		margin-top: -2px;
+	}
 
 	a {
 		color: $m_color_dark !important;

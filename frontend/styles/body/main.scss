@@ -31,57 +31,57 @@ $m_color_light: rgb(237,237,237);
 
 @mixin animate-after() {
 	a {			
-					&:after {
-						content:"";
-						display: block;
-						vertical-align: bottom;
-						width: 0%;
-						border-top: 2px solid blue;
-						transition: width 0.5s ease-in-out;
-					}
-					&:hover:after {
-						content:"";
-						display: block;
-						vertical-align: bottom;
-						border-top: 2px solid blue;
-						width: 100%;
-					}
-				}
+		&:after {
+			content:"";
+			display: block;
+			vertical-align: bottom;
+			width: 0%;
+			border-top: 2px solid blue;
+			transition: width 0.5s ease-in-out;
+		}
+		&:hover:after {
+			content:"";
+			display: block;
+			vertical-align: bottom;
+			border-top: 2px solid blue;
+			width: 100%;
+		}
+	}
 }
 
 .navbar-custom {
 				
-			.nav-custom-main {
+	.nav-custom-main {
 						
-				a {
-					margin: 17px 27px 0 27px;
-					line-height: 25px;
-					opacity: 1;
-					@include font-lato-bold-up(12px);
+		a {
+			margin: 17px 27px 0 27px;
+			line-height: 25px;
+			opacity: 1;
+			@include font-lato-bold-up(12px);
 					
-					&:after {
-						content:"";
-						display: block;
-						vertical-align: bottom;
-						width: 0%;
-						border-top: 2px solid blue;
-						transition: width 0.5s ease-in-out;
-					}
-					&:hover:after {
-						content:"";
-						display: block;
-						vertical-align: bottom;
-						border-top: 2px solid blue;
-						width: 100%;
-					}
-				}
-				a.sale {
-					padding-right: 18px;
-					color: red;
-					opacity: 0.8;
-				}
+			&:after {
+				content:"";
+				display: block;
+				vertical-align: bottom;
+				width: 0%;
+				border-top: 2px solid blue;
+				transition: width 0.5s ease-in-out;
+			}
+			&:hover:after {
+				content:"";
+				display: block;
+				vertical-align: bottom;
+				border-top: 2px solid blue;
+				width: 100%;
 			}
 		}
+		a.sale {
+			padding-right: 18px;
+			color: red;
+			opacity: 0.8;
+		}
+	}
+}
 
 @mixin main-menu($margin-lft, $opacity) {
 	border-bottom-width: 1px;

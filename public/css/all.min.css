@@ -26,6 +26,98 @@
   color: red;
   opacity: 0.8; }
 
+body {
+  color: #333333; }
+  body a, body a:link {
+    padding: 0;
+    color: #979797; }
+  body a:hover {
+    padding: 0;
+    color: #333333;
+    opacity: 1 !important;
+    background: transparent; }
+
+@font-face {
+  font-family: 'Didot-Bold';
+  src: url("../fonts/didot-bold.eot");
+  src: url("../fonts/didot-bold.eot?") format("eot"), url("../fonts/didot-bold.woff2") format("woff2"), url("../fonts/didot-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url("../fonts/lato-bold.eot");
+  src: url("../fonts/lato-bold.eot?") format("eot"), url("../fonts/lato-bold.woff2") format("woff2"), url("../fonts/lato-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Lato-Black';
+  src: url("../fonts/lato-black.eot");
+  src: url("../fonts/lato-black.eot?") format("eot"), url("../fonts/lato-black.woff2") format("woff2"), url("../fonts/lato-black.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url("../fonts/lato-regular.eot");
+  src: url("../fonts/lato-regular.eot?") format("eot"), url("../fonts/lato-regular.woff2") format("woff2"), url("../fonts/lato-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Playfair-Display-Regular';
+  src: url("../fonts/playfairdisplay-regular.eot");
+  src: url("../fonts/playfairdisplay-regular.eot?") format("eot"), url("../fonts/playfairdisplay-regular.woff2") format("woff2"), url("../fonts/playfairdisplay-regular.woff") format("woff"); }
+
+.navbar-custom .nav-custom-main a {
+  margin: 17px 27px 0 27px;
+  line-height: 25px;
+  opacity: 1;
+  font-size: 12px;
+  font-family: 'Lato-Bold';
+  text-transform: uppercase;
+  letter-spacing: 1.1px; }
+  .navbar-custom .nav-custom-main a:after {
+    content: "";
+    display: block;
+    vertical-align: bottom;
+    width: 0%;
+    border-top: 2px solid blue;
+    -webkit-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out; }
+  .navbar-custom .nav-custom-main a:hover:after {
+    content: "";
+    display: block;
+    vertical-align: bottom;
+    border-top: 2px solid blue;
+    width: 100%; }
+
+.navbar-custom .nav-custom-main a.sale {
+  padding-right: 18px;
+  color: red;
+  opacity: 0.8; }
+
+.navbar-custom .nav-custom-main a {
+  margin: 17px 27px 0 27px;
+  line-height: 25px;
+  opacity: 1;
+  font-size: 12px;
+  font-family: 'Lato-Bold';
+  text-transform: uppercase;
+  letter-spacing: 1.1px; }
+  .navbar-custom .nav-custom-main a:after {
+    content: "";
+    display: block;
+    vertical-align: bottom;
+    width: 0%;
+    border-top: 2px solid blue;
+    -webkit-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out; }
+  .navbar-custom .nav-custom-main a:hover:after {
+    content: "";
+    display: block;
+    vertical-align: bottom;
+    border-top: 2px solid blue;
+    width: 100%; }
+
+.navbar-custom .nav-custom-main a.sale {
+  padding-right: 18px;
+  color: red;
+  opacity: 0.8; }
+
 #catalog {
   padding-top: 100px;
   padding-bottom: 55px; }
@@ -324,6 +416,7 @@ footer {
       letter-spacing: 1.1px; }
     #header #upper-header-c .left-list a:hover {
       color: #979797;
+      text-decoration: none;
       background: transparent; }
     #header #upper-header-c .left-list li:first-child a {
       margin: 11px 18px 10px 1px; }
@@ -622,95 +715,3 @@ footer {
 @media (min-width: 1370px) {
   #subscribe {
     background: url(../img/subscribe/subscr-back.png) 0 0; } }
-
-.navbar-custom .nav-custom-main a {
-  margin: 17px 27px 0 27px;
-  line-height: 25px;
-  opacity: 1;
-  font-size: 12px;
-  font-family: 'Lato-Bold';
-  text-transform: uppercase;
-  letter-spacing: 1.1px; }
-  .navbar-custom .nav-custom-main a:after {
-    content: "";
-    display: block;
-    vertical-align: bottom;
-    width: 0%;
-    border-top: 2px solid blue;
-    -webkit-transition: width 0.5s ease-in-out;
-    transition: width 0.5s ease-in-out; }
-  .navbar-custom .nav-custom-main a:hover:after {
-    content: "";
-    display: block;
-    vertical-align: bottom;
-    border-top: 2px solid blue;
-    width: 100%; }
-
-.navbar-custom .nav-custom-main a.sale {
-  padding-right: 18px;
-  color: red;
-  opacity: 0.8; }
-
-body {
-  color: #333333; }
-  body a, body a:link {
-    padding: 0;
-    color: #979797; }
-  body a:hover {
-    padding: 0;
-    color: #333333;
-    opacity: 1 !important;
-    background: transparent; }
-
-@font-face {
-  font-family: 'Didot-Bold';
-  src: url("../fonts/didot-bold.eot");
-  src: url("../fonts/didot-bold.eot?") format("eot"), url("../fonts/didot-bold.woff2") format("woff2"), url("../fonts/didot-bold.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Lato-Bold';
-  src: url("../fonts/lato-bold.eot");
-  src: url("../fonts/lato-bold.eot?") format("eot"), url("../fonts/lato-bold.woff2") format("woff2"), url("../fonts/lato-bold.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Lato-Black';
-  src: url("../fonts/lato-black.eot");
-  src: url("../fonts/lato-black.eot?") format("eot"), url("../fonts/lato-black.woff2") format("woff2"), url("../fonts/lato-black.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Lato-Regular';
-  src: url("../fonts/lato-regular.eot");
-  src: url("../fonts/lato-regular.eot?") format("eot"), url("../fonts/lato-regular.woff2") format("woff2"), url("../fonts/lato-regular.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Playfair-Display-Regular';
-  src: url("../fonts/playfairdisplay-regular.eot");
-  src: url("../fonts/playfairdisplay-regular.eot?") format("eot"), url("../fonts/playfairdisplay-regular.woff2") format("woff2"), url("../fonts/playfairdisplay-regular.woff") format("woff"); }
-
-.navbar-custom .nav-custom-main a {
-  margin: 17px 27px 0 27px;
-  line-height: 25px;
-  opacity: 1;
-  font-size: 12px;
-  font-family: 'Lato-Bold';
-  text-transform: uppercase;
-  letter-spacing: 1.1px; }
-  .navbar-custom .nav-custom-main a:after {
-    content: "";
-    display: block;
-    vertical-align: bottom;
-    width: 0%;
-    border-top: 2px solid blue;
-    -webkit-transition: width 0.5s ease-in-out;
-    transition: width 0.5s ease-in-out; }
-  .navbar-custom .nav-custom-main a:hover:after {
-    content: "";
-    display: block;
-    vertical-align: bottom;
-    border-top: 2px solid blue;
-    width: 100%; }
-
-.navbar-custom .nav-custom-main a.sale {
-  padding-right: 18px;
-  color: red;
-  opacity: 0.8; }

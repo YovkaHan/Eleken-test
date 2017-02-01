@@ -1,0 +1,165 @@
+@import '../body/main';
+
+
+#catalog {
+	padding-top: 100px;
+	padding-bottom: 55px;
+	
+	.great-cl {
+		padding-bottom: 42px;
+		
+		h3 {
+			margin: 0;
+			margin-left: 5px;
+			line-height: 48px;
+			text-align: center;
+			font-family: 'Playfair-Display-Regular', sans-serif;
+			font-size: 58px;
+		}
+	}
+	.navbar-custom {
+		width: 688px; 
+		padding-bottom: 24px;
+		margin: 0 auto;
+		
+		ul {
+			margin-left: 1px;
+		}
+						
+		a {
+			margin: 20px 27px;
+			padding: 0;
+			@include font-lato-bold-up(12px);
+			
+			&:hover {
+				background: transparent;
+			}
+		}
+		
+		& li:first-child a {
+			margin-left: 31px;
+		}
+	}
+	
+	#catalog-content {
+		padding-top: 60px;
+		
+		& section:last-child {
+			padding-top: 18px;
+			padding-left: 1px;
+		}
+	
+		.product {
+			padding-left: 16px;
+			padding-right: 16px;
+
+			figure {
+				text-align: center;
+				padding-bottom: 33px;
+				
+				.product-name {
+					padding-top: 26px;
+					@include font-playfair-d(16px);
+					text-transform: none;
+					padding-bottom: 6px;
+					line-height: 17px;
+				}
+				.product-price {
+					padding-top: 2px;
+					padding-left: 2px;
+					@include font-lato-regular(15px);
+					color: $m_color;
+				}
+				
+				&:hover {
+					cursor: pointer;
+				}
+			}
+
+		}
+		
+		#loadMore {
+			margin: 0 auto;
+			display: block;
+			@include font-lato-bold-up(12px);
+			color: $m_color;
+			
+			webkit-appearance: none;
+			background: white;
+			border: none;
+			
+			&:hover {
+				color: $m_color_dark;
+			}
+		}
+	}
+}
+
+.product-new {
+	.new-label {
+	    height: 25px;
+		width: 49px;
+		position: absolute;
+		top: 26px;
+		left: 42px;
+		padding-top: 5px;
+		padding-left: 10px;
+		@include font-lato-bold-up(11px);
+		font-weight: normal;
+		color: rgb(255,255,255);
+		background: url(../img/catalog/new-label.png) 0 no-repeat;
+		
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
+
+.price {
+	padding: 6px 6px 0px;
+	@include font-lato-regular(16px);
+	color: $m_color;
+}
+.price-crossed {
+	@extend .price;
+	text-decoration: line-through;
+}
+.new-price {
+	@extend .price;
+	color: red;
+}
+
+@media  (min-width: 992px) and (max-width: 1200px) {
+	#catalog-content {
+		.product {
+			img {
+				width: 100%;
+			}
+		}
+	}
+ }
+
+@media  (max-width: 768px) {
+	#catalog {
+	
+		.navbar-custom {
+			width: 115px;
+		}
+	}
+	.product-new {
+		.new-label {
+			left: 20%;
+		}
+	}
+ }
+ 
+ @media  (max-width: 600px) {
+			
+		#catalog-content {
+			.product {
+				img {
+					width: 80%;
+				}
+			}
+		}
+ }

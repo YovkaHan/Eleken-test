@@ -1,0 +1,33 @@
+@import '../body/main';
+
+footer{
+	padding-top: 3px;
+	@include main-menu(170px, 1);
+
+	a {
+		color: $m_color_dark !important;
+	}
+	
+	.navbar {
+		background: rgb(255,255,255);
+	}
+	.rights {
+		padding: 17px 0;
+		float: right;
+		display: inline-block;
+		
+		span {
+			@include font-lato-bold(12px);
+			color: $m_color;
+		}
+	}	
+}
+
+@media  (max-width: 991px) {
+	footer{
+		.nav-custom-main {
+			margin-left: 100px !important;
+			display: none;
+		}
+	}
+ }

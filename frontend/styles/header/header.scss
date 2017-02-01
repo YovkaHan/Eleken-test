@@ -1,0 +1,190 @@
+	@import '../body/main';
+	
+	#header {
+		.navbar {
+			background: rgb(255,255,255);
+		}
+		
+		#upper-header-c {
+			border: 1px solid $m_color_light;
+			border-top: none;
+			border-left: none;
+			border-right: none;
+			@include font-lato-bold-up(11px);
+			
+			.left-list {
+				min-height: 0px;
+				display: inline-block;
+				margin: 0;
+				padding: 0;
+				padding-top: 3px;
+				
+				li{
+					float: left;
+					display: inline-block;
+				}
+				
+				a {
+					padding: 0;
+					display: block;
+					margin: 11px 16px 10px 16px;
+					letter-spacing: 1.1px;
+				}
+				a:hover {
+					color: $m_color;
+					background: transparent;
+				}
+				
+				& li:first-child {
+					a {
+						margin:  11px 18px 10px 1px;
+					}
+				}
+				& li:last-child {
+					a {
+						margin:  11px 16px 10px 14px;
+					}
+				}
+			}
+			#right-dropdowns {
+				margin-right: -2px;
+				float: right;
+				display: flex;
+			
+				.dropdown {
+					display: inline-block;
+					
+					button {
+						border-color: transparent;
+						border-radius: 0;
+						background: transparent;
+						padding-right: 15px;
+						padding-left: 18px;
+						padding-top: 13px;
+						padding-bottom: 13px;
+						@include font-lato-bold-up(11px);
+						color: rgb(150,150,150);
+						
+						
+						.arrow {
+						    cursor:pointer;
+							height:39px; 
+							width:8px;
+							position:absolute;
+							top: 2px;
+							right:0px;
+							background: url("../img/header/Rounded-Rectangle-2-copy-2.png") 0 no-repeat;
+						}
+						
+						&:hover {
+							background: transparent;
+							box-shadow: none;
+						}
+						&:focus {
+							background: transparent;
+							outline: none;
+						}
+					}
+					
+					.dropdown-menu {
+						left: -25%;
+						@include font-lato-bold-up(12px);
+						
+						a {
+							padding: 2px 4px;
+						}
+					}
+					
+				}
+				
+				& .dropdown:first-child {
+					button{
+						padding-right: 39px;
+						border-right: 1px solid $m_color_light;
+						border-radius: 0;
+						
+						.arrow {
+							width: 28px;
+						}
+					}
+				}
+			}
+		}
+		#lower-header-c {
+			@include main-menu(161px, 0.6);
+			padding-bottom: 10px;
+		}
+	}
+	
+	$cart-right-m: 138px;
+	$search-right-m: 101px;
+	
+	.cart {
+		display: inline-block;
+		position: absolute;
+		right: $cart-right-m;
+		top: 69px;
+		
+		.cart-sign {
+			display: inline-block;
+			padding-right: 10px;
+			@include font-lato-bold-up(12px);
+			color: $m_color;
+		}
+		
+		.cart-amount {
+			display: inline-block;
+			position: relative;
+			width: 48px;
+			height: 48px;
+			border-radius: 100%;
+			border: 2px solid #1f86da;
+			cursor: pointer;
+			
+			.cart-amount-count {
+				display: inline-block;
+				padding-top: 14px;
+				padding-left: 18px;
+				@include font-lato-bold-up(12px);
+			}
+		}
+	}
+	.search {
+		display: inline-block;
+		position: absolute;
+		top: 79px;
+		right: 101px;
+		
+		.search-btn {
+			padding: 8px 8px;
+			border: 0;
+			position: relative;
+			display: inline-block;
+			background: url("../img/header/search-icon.png") 0 no-repeat;
+		}
+	}
+	
+	@media  (max-width:1200px) {
+		.navbar {
+					
+			.nav-custom-main {
+				margin-left: 100px !important;
+			}
+		}
+		.cart {	
+			right: $cart-right-m / 2 !important;
+			
+			.cart-sign {
+				display: none;
+			}
+		}
+		.search {
+			right: ($cart-right-m / 2)- ($cart-right-m - $search-right-m) !important;
+		}
+	}
+	
+	@media  (max-width:768px) { 
+		.search {
+			display: none;
+		}
+	}

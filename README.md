@@ -21,6 +21,9 @@
 
 Content in "public" folder has been dynamically generated and using as main folder for public content on server</p>
 
-<h3>Start production</h3>
+<h3>Development</h3>
 
-node server
+<ul>
+<li>node server</li>
+<li>gulp dev</li>
+</ul>

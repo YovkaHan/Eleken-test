@@ -165,3 +165,9 @@
 			}
 		}
  }
+ 
+  @media  (max-width: 420px) {
+	.product .product-name {
+		font-size: 12px !important;
+	}
+  }

@@ -1,14 +1,13 @@
 {
-  "name": "Simple-PSD-to-HTML-Template",
+  "name": "PSD-to-HTML-Template from Eleken",
   "version": "0.1.0",
   "description": "Test task for Eleken",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "production": "set NODE_ENV=production&&gulp build"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Igor Yovka",
+  "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.14.0",
     "babel-loader": "^6.2.5",

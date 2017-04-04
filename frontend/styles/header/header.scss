@@ -189,3 +189,24 @@
 			display: none;
 		}
 	}
+	
+	
+	@media (max-width: 395px) {
+		#header #upper-header-c {
+			.left-list a {
+				margin: 11px 4px 10px;
+			}
+			#right-dropdowns {
+				.dropdown button {
+					padding: 13px 10px 13px 5px;
+				}
+				.dropdown:first-child button {
+					padding-right: 15px;
+					
+					.arrow {
+						width: 15px;
+					}
+				}
+			}
+		}
+	}
